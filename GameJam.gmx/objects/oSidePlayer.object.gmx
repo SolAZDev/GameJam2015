@@ -60,10 +60,12 @@ if(place_free(x,y+1)){gravity=1;}else{gravity=0; vspeed=0;}
 //Check Carefully,Key Presses
 if(keyboard_check(vk_right) || keyboard_check(ord('D'))){
     facing="right";
+    image_xscale=1;
     hspeed=+4;
 }else
 if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){
     facing="left";
+    image_xscale=-1;
     hspeed=-4;
 }else{hspeed=0;}
 
