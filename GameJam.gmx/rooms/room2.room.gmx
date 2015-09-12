@@ -12,6 +12,7 @@
   <showcolour>-1</showcolour>
   <code>global.hp=100;
 global.pow=50;
+global.ammo=5;
 global.lives=3;
 global.score=5;
 global.StageOpt=2;
