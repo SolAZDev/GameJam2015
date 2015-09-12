@@ -78,10 +78,10 @@ if (vspeed&gt;vSpeedMax) {vspeed=vSpeedMax;}
 }*/
 // /////////////////// MOVEMENT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //Check Carefully,Key Presses
-if(keyboard_check(vk_right) || keyboard_check(ord('D'))){move=1; spr=oP_Move; facing=right;
+if(keyboard_check(vk_right) || keyboard_check(ord('D'))){move=1; facing=right;
  if(place_free(x+1,y)){ hspeed =4; }
 }
-if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){move=2; spr=oP_Move; facing=left; 
+if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){move=2; facing=left; 
  if(place_free(x-1,y)){ hspeed=-4; }
 }
 moving= keyboard_check(vk_left) + keyboard_check(vk_right) + keyboard_check(ord('A')) + keyboard_check(ord('D'));
