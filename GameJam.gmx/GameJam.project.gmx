@@ -8,7 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sSPStill</sprite>
     <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\sAmmo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

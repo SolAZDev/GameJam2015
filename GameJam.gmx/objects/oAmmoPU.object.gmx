@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>col=false;
-ammo=10;
-hp=10;
-pow=10;
-score=500;
-lives=1;
+ammo=20;
+hp=0;
+pow=0;
+score=50;
+lives=0;
 </string>
           </argument>
         </arguments>
