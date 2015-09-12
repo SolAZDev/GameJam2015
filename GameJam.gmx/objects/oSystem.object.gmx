@@ -32,7 +32,7 @@ if(global.StageOpt == 1){ //Topdown
     start=1;
 }else
 if(global.StageOpt == 1){ //Sidescroller
-    instance_create(room_width/4,room_height/2,oSidePlayer);
+    instance_create(room_width/4,room_height/4,oSidePlayer);
     start=1;
 }
 
