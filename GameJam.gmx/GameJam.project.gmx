@@ -18,19 +18,26 @@
     <objects name="System">
       <object>objects\oTitle</object>
       <object>objects\oSystem</object>
+      <objects name="Sidescrolling Only">
+        <object>objects\oFloor</object>
+      </objects>
     </objects>
-    <object>objects\oFloor</object>
-    <object>objects\oPowerup</object>
-    <object>objects\oAmmoPU</object>
-    <object>objects\oPlayerBullet</object>
-    <object>objects\oBullet</object>
+    <objects name="PowerUps">
+      <object>objects\oPowerup</object>
+      <object>objects\oAmmoPU</object>
+    </objects>
+    <objects name="Bullets">
+      <object>objects\oPlayerBullet</object>
+      <object>objects\oBullet</object>
+    </objects>
     <objects name="Player">
       <object>objects\oPlayerClass</object>
       <object>objects\oSidePlayer</object>
       <object>objects\oTDPlayer</object>
+      <object>objects\object12</object>
     </objects>
-    <object>objects\oEBug</object>
     <objects name="Enemies">
+      <object>objects\oEBug</object>
       <object>objects\oEnemyClass</object>
     </objects>
   </objects>
