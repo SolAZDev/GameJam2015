@@ -31,7 +31,7 @@ DestX = 0
 DestY = 0
 half_height = x - bbox_left
 half_width = y - bbox_top
-ammo=global.ammo;
+
 </string>
           </argument>
         </arguments>
@@ -96,10 +96,10 @@ else if(y+half_width &gt; room_width)
     y = room_width - half_width
 }
 
-if(ammo &gt; 0 &amp;&amp; mouse_check_button_pressed(mb_left))
+if(global.ammo &gt; 0 &amp;&amp; mouse_check_button_pressed(mb_left))
 {
     instance_create(x, y, oPlayerBullet)
-    ammo -= 1
+    global.ammo -= 1
 }
 
 if(bounceTime &gt; 0)
