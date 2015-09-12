@@ -78,11 +78,11 @@ if(place_free(x,y+1)){gravity=1;}else{gravity=0; vspeed=0;}
 if(keyboard_check(vk_right) || keyboard_check(ord('D'))){move=1; facing=right;
 // if(place_free(x+1,y)){ hspeed =4; }
 hspeed=+4;
-}
+}else
 if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){move=2; facing=left; 
 // if(place_free(x-1,y)){ hspeed=-4; }
 hspeed=-4;
-}
+}else{hspeed=0;}
 /*
 //Jumping
 if(OnStairs==false){
