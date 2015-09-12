@@ -25,27 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/* DO NOT TOUCH */
-came_from="";cantbehit=false;trans86E=false;dead=false;current_room=room;visibl=false;hit=false;right="Right";left="Left";nowhere="Nowhere";up="Up";down="Down";going=nowhere;continuesprite=-1;keysright=false;keysleft=false;freespace="Free space";liquid="Liquid";in=freespace;inwater=false;hitshock=false;going_to_prev_room=false;going_to_next_room=false;
-Move = 0;
-//Initialization
-hp = 100;//Custom Health
+            <string>//Initialization
+//hp=global.hp;
 facing=right;//Self Explained
-nSpeed=0;//Speed in X axis (Current Speed)
-mSpeed=4;
-slip=8;
-startup=11;
-grav=0.7;
-move=0;
-onground=false;
-vSpeedMax=12;
-jSpeed=15;
-invins_max=90;
-invins=0;
-OnStairs=false;
 
-col1=c_black;
-col2=c_gray;
 </string>
           </argument>
         </arguments>
@@ -75,14 +58,15 @@ if(place_free(x,y+1)){gravity=1;}else{gravity=0; vspeed=0;}
 
 // /////////////////// MOVEMENT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //Check Carefully,Key Presses
-if(keyboard_check(vk_right) || keyboard_check(ord('D'))){move=1; facing=right;
-// if(place_free(x+1,y)){ hspeed =4; }
-hspeed=+4;
+if(keyboard_check(vk_right) || keyboard_check(ord('D'))){
+    facing=right;
+    hspeed=+4;
 }else
-if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){move=2; facing=left; 
-// if(place_free(x-1,y)){ hspeed=-4; }
-hspeed=-4;
+if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){
+    facing=left; 
+    hspeed=-4;
 }else{hspeed=0;}
+
 /*
 //Jumping
 if(OnStairs==false){
@@ -92,11 +76,6 @@ if (keyboard_check_released(ord('Z')) || keyboard_check_released(vk_space) &amp;
 //if(keyboard_check_pressed(vk_up)){ facing=up; }
 */
 
-
-if(going==up){col1=c_red;}
-if(going==down){col1=c_blue;}
-if(going==left){col1=c_green;}
-if(going==right){col1=c_yellow;}
 </string>
           </argument>
         </arguments>
