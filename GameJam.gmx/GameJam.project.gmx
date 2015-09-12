@@ -7,6 +7,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sSPStill</sprite>
+    <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sprite2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -19,6 +21,7 @@
     <object>objects\oSidePlayer</object>
     <object>objects\oBullet</object>
     <object>objects\oTDPlayer</object>
+    <object>objects\oFloor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
