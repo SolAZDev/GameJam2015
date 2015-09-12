@@ -43,6 +43,9 @@ jSpeed=15;
 invins_max=90;
 invins=0;
 OnStairs=false;
+
+col1=c_black;
+col2=c_gray;
 </string>
           </argument>
         </arguments>
@@ -96,6 +99,10 @@ if(nSpeed&lt;0){facing=left;}
 if (!place_free(x,y+1)) {onground=true;} else {onground=false;}
 if (vspeed&gt;0) {going=down;} else if (vspeed&lt;0) {going=up;} else {going=nowhere;}
 
+if(going==up){col1=c_red;}
+if(going==down){col1=c_blue;}
+if(going==left){col1=c_green;}
+if(going==right){col1=c_yellow;}
 </string>
           </argument>
         </arguments>
