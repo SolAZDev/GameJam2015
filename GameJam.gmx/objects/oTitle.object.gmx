@@ -90,8 +90,9 @@ if(mouse_y &gt;=p2y &amp;&amp; mouse_y &lt;= p3y &amp;&amp; mouse_check_button(m
 if(mouse_y &gt;=p3y &amp;&amp; mouse_y &lt;=p3y+64 &amp;&amp; mouse_check_button(mb_any)){st=3;}
 }
 
-
-
+//Actual Navigation
+if(st==3){game_end();}
+if(st==1){room_goto_next(); }
 </string>
           </argument>
         </arguments>
