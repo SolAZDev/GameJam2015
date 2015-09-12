@@ -8,7 +8,9 @@
   <sprites name="sprites">
     <sprite>sprites\sSPStill</sprite>
     <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sHealth</sprite>
     <sprite>sprites\sAmmo</sprite>
+    <sprite>sprites\sPower</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -28,6 +30,8 @@
     </objects>
     <objects name="PowerUps">
       <object>objects\oPowerup</object>
+      <object>objects\oHealth</object>
+      <object>objects\oPower</object>
       <object>objects\oAmmoPU</object>
     </objects>
     <objects name="Bullets">
@@ -47,6 +51,7 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\SpawnTimeline</timeline>
+    <timeline>timelines\SpawnPowerUp</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room0</room>
