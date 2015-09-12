@@ -31,6 +31,7 @@ DestX = 0
 DestY = 0
 half_height = x - bbox_left
 half_width = y - bbox_top
+ammo=global.ammo;
 </string>
           </argument>
         </arguments>
