@@ -55,7 +55,7 @@ pos=1;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>oTitle</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -80,6 +80,7 @@ if(keyboard_check(vk_space)){
 }
 
 //Mouse Navigation1
+if(mouse_x &gt;=xx &amp;&amp; mouse_x &lt;= room_width-xx){
 if(mouse_y &gt;=p1y-64 &amp;&amp; mouse_y &lt;= p2y){pos=1;}
 if(mouse_y &gt;=p2y &amp;&amp; mouse_y &lt;= p3y){pos=2;}
 if(mouse_y &gt;=p3y &amp;&amp; mouse_y &lt;=p3y+64){pos=3;}
@@ -87,7 +88,7 @@ if(mouse_y &gt;=p3y &amp;&amp; mouse_y &lt;=p3y+64){pos=3;}
 if(mouse_y &gt;=p1y-64 &amp;&amp; mouse_y &lt;= p2y &amp;&amp; mouse_check_button(mb_any)){st=1;}
 if(mouse_y &gt;=p2y &amp;&amp; mouse_y &lt;= p3y &amp;&amp; mouse_check_button(mb_any)){st=2;}
 if(mouse_y &gt;=p3y &amp;&amp; mouse_y &lt;=p3y+64 &amp;&amp; mouse_check_button(mb_any)){st=3;}
-
+}
 
 
 
