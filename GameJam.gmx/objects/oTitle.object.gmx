@@ -90,10 +90,6 @@ if(mouse_y &gt;=p3y &amp;&amp; mouse_y &lt;=p3y+64 &amp;&amp; mouse_check_button
 
 
 
-//Debuging :: TitleScreen
-if(st==1){draw_text(5,5,string(p1t));}
-if(st==2){draw_text(5,5,string(p2t));}
-if(st==3){draw_text(5,5,string(pt3));}
 
 </string>
           </argument>
@@ -126,6 +122,10 @@ if(pos == 1){ draw_text(xx,p1y,"&gt;&gt;&gt;");}else
 if(pos == 2){ draw_text(xx,p2y,"&gt;&gt;&gt;");}else
 if(pos == 3){ draw_text(xx,p3y,"&gt;&gt;&gt;");}
 
+//Debuging :: TitleScreen
+if(st==1){draw_text(5,5,string(p1t));}
+if(st==2){draw_text(5,5,string(p2t));}
+if(st==3){draw_text(5,5,string(p3t));}
 
 </string>
           </argument>
