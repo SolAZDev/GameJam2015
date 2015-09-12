@@ -5,7 +5,9 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sSPStill</sprite>
+  </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
