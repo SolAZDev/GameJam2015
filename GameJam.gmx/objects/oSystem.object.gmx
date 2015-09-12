@@ -91,11 +91,11 @@ draw_rectangle_colour(5,5,room_width-5,49,c_black,c_black,c_black,c_black,0);
 
 //HealthBar
 draw_text_colour(10,6,"HP",c_green,c_green,c_green,c_green,255);
-draw_healthbar(25,6,room_width/2-15,18,global.hp,c_black,c_red,c_green,0,0,1);
+draw_healthbar(35,6,room_width/2-15,18,global.hp,c_gray,c_red,c_green,0,0,1);
 
 //PowerBar -- To Be Removed
-draw_healthbar(room_width/2+15,6,room_width-25,18,global.pow,c_black,c_gray,c_red,1,0,1);
-draw_text_colour(room_width-10,6,"Pw",c_red,c_red,c_red,c_red,255);
+draw_healthbar(room_width/2+15,6,room_width-25,18,global.pow,c_gray,c_dkgray,c_red,1,0,1);
+draw_text_colour(room_width-24,6,"Pw",c_red,c_red,c_red,c_red,255);
 
 //Lives
 draw_text_colour(room_width/4-(string_length("Lives")*6),19,"Lives",c_red,c_fuchsia,c_red,c_fuchsia,255);
