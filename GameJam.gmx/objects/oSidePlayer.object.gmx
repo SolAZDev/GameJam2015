@@ -42,6 +42,7 @@ vSpeedMax=12;
 jSpeed=15;
 invins_max=90;
 invins=0;
+OnStairs=false;
 </string>
           </argument>
         </arguments>
