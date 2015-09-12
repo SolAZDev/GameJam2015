@@ -26,7 +26,48 @@
           <argument>
             <kind>1</kind>
             <string>p1t="New Game";
-p2t=
+p2t="Continue";
+p3t="Exit";
+
+p1y=room_width/2;
+p2y=room_width/2+(12*2);
+p3y=room_width/2+(12*4);
+
+xx=room_width/4;
+
+pos=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(room_width/2-(string_length(GameName)*6),room_height/4,string(GameName));
+draw_text(room_width/2-(string_length(p1t)*6),p1y,string(p1t));
+draw_text(room_width/2-(string_length(p2t)*6),p2y,string(p2t));
+draw_text(room_width/2-(string_length(p3t)*6),p3y,string(p3t));
+
+if(pos == 1){ draw_text(xx,p1y,"&gt;&gt;&gt;");}else
+if(pos == 2){ draw_text(xx,p2y,"&gt;&gt;&gt;");}else
+if(pos == 3){ draw_text(xx,p3y,"&gt;&gt;&gt;");}
+
+
 </string>
           </argument>
         </arguments>
