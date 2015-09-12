@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ammo=10;
+            <string>col=false;
+ammo=10;
 hp=10;
 pow=10;
 
