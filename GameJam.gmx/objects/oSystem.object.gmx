@@ -26,11 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///Setup the Stage Acordingly to the Room Setting
+start=0;
 if(global.StageOpt == 1){ //Topdown
     instance_create(room_width/2,room_height-(room_height/4),oTDPlayer);
+    start=1;
 }else
 if(global.StageOpt == 1){ //Sidescroller
     instance_create(room_width/4,room_height/2,oSidePlayer);
+    start=1;
 }
 
 </string>
@@ -56,9 +59,10 @@ if(global.StageOpt == 1){ //Sidescroller
           <argument>
             <kind>1</kind>
             <string>///Move Towards the Player Object
-if(global.StageOpt == 1){ x=oTDPlayer.x; y=oTDPlayer.y; }else
-if(global.StageOpt == 2){ x=oSidePlayer.x; y=oSidePlayer.y; }
-
+if(start==1){
+    if(global.StageOpt == 1){ x=oTDPlayer.x; y=oTDPlayer.y; }else
+    if(global.StageOpt == 2){ x=oSidePlayer.x; y=oSidePlayer.y; }
+}
 </string>
           </argument>
         </arguments>
