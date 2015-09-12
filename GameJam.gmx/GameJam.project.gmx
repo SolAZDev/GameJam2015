@@ -15,6 +15,7 @@
       <object>objects\oTitle</object>
     </objects>
     <object>objects\oSidePlayer</object>
+    <object>objects\oBullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
