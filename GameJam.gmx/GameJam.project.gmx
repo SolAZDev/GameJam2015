@@ -21,6 +21,10 @@
       <objects name="Sidescrolling Only">
         <object>objects\oFloor</object>
       </objects>
+      <objects name="StuffSpawneer">
+        <object>objects\oEnemySpawn</object>
+        <object>objects\oItemSpawn</object>
+      </objects>
     </objects>
     <objects name="PowerUps">
       <object>objects\oPowerup</object>
@@ -28,21 +32,25 @@
     </objects>
     <objects name="Bullets">
       <object>objects\oPlayerBullet</object>
+      <object>objects\oEBullet</object>
       <object>objects\oBullet</object>
     </objects>
     <objects name="Player">
       <object>objects\oPlayerClass</object>
       <object>objects\oSidePlayer</object>
       <object>objects\oTDPlayer</object>
-      <object>objects\object12</object>
     </objects>
     <objects name="Enemies">
       <object>objects\oEBug</object>
       <object>objects\oEnemyClass</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\SpawnTimeline</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room3</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
   </rooms>

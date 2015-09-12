@@ -63,6 +63,7 @@ if(col==true){
     global.lives+= lives;
     instance_destroy();
 }
+if(global.StageOpt==1){ vspeed=3; }
 </string>
           </argument>
         </arguments>

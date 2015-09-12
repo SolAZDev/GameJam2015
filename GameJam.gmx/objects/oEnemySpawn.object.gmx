@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>oBullet</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,13 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dmg=5;
+            <string>Countdown = 2000
+SpawnCount = 3
+WaveCount = 2
+EnemySpeed = 5
+
+randomize()
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oPlayerClass">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,8 +54,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.hp-=dmg;
-instance_destroy();
+            <string>Countdown -= delta_time*0.001
+if(Countdown &lt;= 0 &amp;&amp; WaveCount &gt; 0)
+{
+    for(i=0; i &lt; SpawnCount; i += 1)
+    {
+        instance_create(irandom(620)+200, 1050, 
+                choose(oEBug));
+    }
+    num = irandom(2)+1
+    SpawnCount = num
+    Countdown = num*1500
+    WaveCount -= 1
+}
 </string>
           </argument>
         </arguments>
