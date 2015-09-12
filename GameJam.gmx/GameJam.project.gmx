@@ -13,6 +13,9 @@
       <object>objects\oTitle</object>
     </objects>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
