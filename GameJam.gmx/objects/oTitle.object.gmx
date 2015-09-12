@@ -37,6 +37,7 @@ p3y=room_width/2+(12*4);
 
 xx=room_width/4;
 
+st=0;
 pos=1;
 </string>
           </argument>
@@ -71,8 +72,28 @@ if(keyboard_check(vk_down)){
     if(pos==2){pos=3;}
     if(pos==3){pos=1;}
 }
+//Keyboard Navigation
+if(keyboard_check(vk_space)){
+    if(pos==1){st=1;}
+    if(pos==2){st=2;}
+    if(pos==3){st=3;}
+}
 
-if(mouse_y &gt;=p1y
+//Mouse Navigation1
+if(mouse_y &gt;=p1y-64 &amp;&amp; mouse_y &lt;= p2y){pos=1;}
+if(mouse_y &gt;=p2y &amp;&amp; mouse_y &lt;= p3y){pos=2;}
+if(mouse_y &gt;=p3y &amp;&amp; mouse_y &lt;=p3y+64){pos=3;}
+//Mouse Selection
+if(mouse_y &gt;=p1y-64 &amp;&amp; mouse_y &lt;= p2y &amp;&amp; mouse_check_button(mb_any)){st=1;}
+if(mouse_y &gt;=p2y &amp;&amp; mouse_y &lt;= p3y &amp;&amp; mouse_check_button(mb_any)){st=2;}
+if(mouse_y &gt;=p3y &amp;&amp; mouse_y &lt;=p3y+64 &amp;&amp; mouse_check_button(mb_any)){st=3;}
+
+
+
+//Debuging :: TitleScreen
+if(st==1){draw_text(5,5,string(p1t));}
+if(st==2){draw_text(5,5,string(p2t));}
+if(st==3){draw_text(5,5,string(pt3));}
 
 </string>
           </argument>
