@@ -22,6 +22,7 @@
     <object>objects\oBullet</object>
     <object>objects\oTDPlayer</object>
     <object>objects\oFloor</object>
+    <object>objects\oPowerup</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -64,6 +64,7 @@
     <instance objName="oFloor" x="288" y="384" name="inst_5AA495B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFloor" x="320" y="384" name="inst_7247F9B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFloor" x="352" y="384" name="inst_59DD4FB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPowerup" x="224" y="128" name="inst_83CAE615" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
