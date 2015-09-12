@@ -19,16 +19,20 @@
       <object>objects\oTitle</object>
       <object>objects\oSystem</object>
     </objects>
-    <object>objects\oSidePlayer</object>
-    <object>objects\oBullet</object>
-    <object>objects\oTDPlayer</object>
     <object>objects\oFloor</object>
     <object>objects\oPowerup</object>
     <object>objects\oAmmoPU</object>
-    <object>objects\oEnemyClass</object>
     <object>objects\oPlayerBullet</object>
+    <object>objects\oBullet</object>
+    <objects name="Player">
+      <object>objects\oPlayerClass</object>
+      <object>objects\oSidePlayer</object>
+      <object>objects\oTDPlayer</object>
+    </objects>
     <object>objects\oEBug</object>
-    <object>objects\oPlayerClass</object>
+    <objects name="Enemies">
+      <object>objects\oEnemyClass</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
