@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>p1t="New Game";
+            <string>GameName="TESTGAME";
+
+p1t="New Game";
 p2t="Continue";
 p3t="Exit";
 
