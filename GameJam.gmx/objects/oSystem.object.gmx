@@ -25,15 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.StageOpt == 1){ //Topdown
+            <string>///Setup the Stage Acordingly to the Room Setting
+if(global.StageOpt == 1){ //Topdown
     instance_create(room_width/2,room_height-(room_height/4),oTDPlayer);
 }else
 if(global.StageOpt == 1){ //Sidescroller
     instance_create(room_width/4,room_height/2,oSidePlayer);
 }
-dHealth=global.hp;
-dAmmo  =global.ammo;
-dPower =global.pow;
+
 </string>
           </argument>
         </arguments>
@@ -56,7 +55,8 @@ dPower =global.pow;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.StageOpt == 1){ x=oTDPlayer.x; y=oTDPlayer.y; }else
+            <string>///Move Towards the Player Object
+if(global.StageOpt == 1){ x=oTDPlayer.x; y=oTDPlayer.y; }else
 if(global.StageOpt == 2){ x=oSidePlayer.x; y=oSidePlayer.y; }
 
 </string>
@@ -83,7 +83,28 @@ if(global.StageOpt == 2){ x=oSidePlayer.x; y=oSidePlayer.y; }
             <kind>1</kind>
             <string>/// CREATE THINE HUD
 //HUD Area
-draw_rectangle_colour(5,5,room_width-5,24,c_black,c_black,c_black,c_black,0);
+draw_rectangle_colour(5,5,room_width-5,49,c_black,c_black,c_black,c_black,0);
+
+//HealthBar
+draw_text_colour(10,6,"HP",c_green,c_green,c_green,c_green,255);
+draw_healthbar(25,6,room_width/2-15,18,global.hp,c_black,c_red,c_green,0,0,1);
+
+//PowerBar -- To Be Removed
+draw_healthbar(room_width/2+15,6,room_width-25,18,global.pow,c_black,c_gray,c_red,1,0,1);
+draw_text_colour(room_width-10,6,"Pw",c_red,c_red,c_red,c_red,255);
+
+//Lives
+draw_text_colour(room_width/4-(string_length("Lives")*6),19,"Lives",c_red,c_fuchsia,c_red,c_fuchsia,255);
+draw_text_colour(room_width/4-(string_length(string(global.lives))*6),32,string(global.lives),c_red,c_fuchsia,c_red,c_fuchsia,255);
+
+//Score
+draw_text_colour(room_width/2-(string_length("Score")*6),19,"Score",c_yellow,c_yellow,c_yellow,c_yellow,255);
+draw_text_colour(room_width/2-(string_length(string(global.score))*6),32,string(global.score),c_yellow,c_yellow,c_yellow,c_yellow,255);
+
+//Ammo
+draw_text_colour(room_width-(room_width/4)-(string_length("Ammo")),19,"Ammo",c_lime,c_lime,c_lime,c_lime,255);
+draw_text_colour(room_width-(room_width/4)-(string_length(string(global.ammo))*6),32,string(global.ammo),c_lime,c_lime,c_lime,c_lime,255);
+
 
 </string>
           </argument>

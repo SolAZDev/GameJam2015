@@ -29,6 +29,9 @@
 hp=15;
 ammo=15;
 pow=15;
+score=10;
+lives=1;
+
 </string>
           </argument>
         </arguments>
@@ -53,17 +56,12 @@ pow=15;
             <kind>1</kind>
             <string>if(place_free(x,y+1)){gravity=1;}else{gravity=0; vspeed=0;}
 if(col==true){
-     if(instance_exists(oTDPlayer)){
-        oTDPlayer.ammo += ammo;
-        oTDPlayer.hp   += hp;
-        oTDPlayer.pow  += pow;
-     }
-     if(instance_exists(oSidePlayer)){
-        oSidePlayer.ammo += ammo;
-        oSidePlayer.hp   += hp;
-        oSidePlayer.pow  += pow;
-     }
-     instance_destroy();
+    global.ammo += ammo;
+    global.hp   += hp;
+    global.pow  += pow;
+    global.score+= score;
+    global.lives+= lives;
+    instance_destroy();
 }
 </string>
           </argument>

@@ -17,6 +17,7 @@
   <objects name="objects">
     <objects name="System">
       <object>objects\oTitle</object>
+      <object>objects\oSystem</object>
     </objects>
     <object>objects\oSidePlayer</object>
     <object>objects\oBullet</object>
@@ -24,7 +25,6 @@
     <object>objects\oFloor</object>
     <object>objects\oPowerup</object>
     <object>objects\oAmmoPU</object>
-    <object>objects\oSystem</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

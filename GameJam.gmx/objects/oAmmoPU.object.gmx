@@ -29,7 +29,8 @@
 ammo=10;
 hp=10;
 pow=10;
-
+score=500;
+lives=1;
 </string>
           </argument>
         </arguments>
