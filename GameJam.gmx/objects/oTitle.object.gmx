@@ -37,7 +37,7 @@ p3y=room_width/2+(12*4);
 
 xx=room_width/4;
 
-pos=0;
+pos=1;
 </string>
           </argument>
         </arguments>
