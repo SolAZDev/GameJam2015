@@ -28,7 +28,8 @@
             <string>//Initialization
 hp=100;
 facing="right";//Self Explained
-
+pow=0;
+ammo=0;
 </string>
           </argument>
         </arguments>
