@@ -71,11 +71,8 @@ col2=c_gray;
             <string>//hspeed=nSpeed;
 image_speed=0.25;
 //Gravity and vSpeed Limit
+if(place_free(x,y+1)){gravity=1;}else{gravity=0; vspeed=0;}
 
-if(OnStairs==false){
-if (place_free(x,y+1)) {gravity=grav;} else {gravity=0;}
-if (vspeed&gt;vSpeedMax) {vspeed=vSpeedMax;}
-}
 // /////////////////// MOVEMENT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //Check Carefully,Key Presses
 if(keyboard_check(vk_right) || keyboard_check(ord('D'))){move=1; facing=right;
