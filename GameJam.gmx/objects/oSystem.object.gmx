@@ -107,7 +107,7 @@ draw_text_colour(room_width/2-(string_length(string(global.score))*6),32,string(
 
 //Ammo
 draw_text_colour(room_width-(room_width/4)-(string_length("Ammo")),19,"Ammo",c_lime,c_lime,c_lime,c_lime,255);
-draw_text_colour(room_width-(room_width/4)-(string_length(string(global.ammo))*6),32,string(global.ammo),c_lime,c_lime,c_lime,c_lime,255);
+draw_text_colour(room_width-(room_width/4)-(string_length(string(global.ammo))*3),32,string(global.ammo),c_lime,c_lime,c_lime,c_lime,255);
 
 
 </string>
