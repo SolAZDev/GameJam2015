@@ -23,6 +23,7 @@
     <object>objects\oTDPlayer</object>
     <object>objects\oFloor</object>
     <object>objects\oPowerup</object>
+    <object>objects\oAmmoPU</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
