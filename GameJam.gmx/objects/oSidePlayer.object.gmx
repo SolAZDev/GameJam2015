@@ -83,14 +83,14 @@ if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){move=2; facing=left;
 }
 moving= keyboard_check(vk_left) + keyboard_check(vk_right) + keyboard_check(ord('A')) + keyboard_check(ord('D'));
 if(moving==0){hspeed=0; move=0;}
-
+/*
 //Jumping
 if(OnStairs==false){
 if(keyboard_check(ord('Z') || keyboard_check(vk_space)) &amp;&amp; (!place_free(x,y+1))){ vspeed=-jSpeed; going=up;}
 if (keyboard_check_released(ord('Z')) || keyboard_check_released(vk_space) &amp;&amp;going==up) {vspeed/=1.6; gravity=grav;}
 }
 //if(keyboard_check_pressed(vk_up)){ facing=up; }
-
+*/
 // Update Directions
 if(nSpeed&gt;0){facing=right;}
 if(nSpeed&lt;0){facing=left;}
