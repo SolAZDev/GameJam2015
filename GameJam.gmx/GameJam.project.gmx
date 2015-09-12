@@ -25,6 +25,10 @@
     <object>objects\oFloor</object>
     <object>objects\oPowerup</object>
     <object>objects\oAmmoPU</object>
+    <object>objects\oEnemyClass</object>
+    <object>objects\oPlayerBullet</object>
+    <object>objects\oEBug</object>
+    <object>objects\oPlayerClass</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

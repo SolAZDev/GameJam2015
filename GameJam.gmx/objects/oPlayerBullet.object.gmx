@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>oPlayerClass</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,12 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>movement = 5
-bounceTime = 0
-DestX = 0
-DestY = 0
-half_height = x - bbox_left
-half_width = y - bbox_top
+            <string>image_angle = point_direction(x, y, mouse_x, mouse_y)
+depth = -100
 </string>
           </argument>
         </arguments>
@@ -53,66 +49,12 @@ half_width = y - bbox_top
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Controls
-mov = movement
+            <string>x+=lengthdir_x( 10, image_angle);
+y+=lengthdir_y( 10, image_angle);
 
-if(x &lt; 200 || x &gt; 820)
+if(x &lt; -32 || x &gt; 1036 || y &lt; -32 || y &gt; 1036)
 {
-    mov *= 0.5
-}
-if (keyboard_check(vk_up) || keyboard_check(ord("W")))
-{
-    y -= mov;
-}
-if (keyboard_check(vk_down) || keyboard_check(ord("S")))
-{
-   y += mov;
-}
-if (keyboard_check(vk_left) || keyboard_check(ord("A")))
-{
-    x -= mov;
-}
-if (keyboard_check(vk_right) || keyboard_check(ord("D")))
-{
-    x += mov;
-}
-
-///////////////////////////////////////
-if(x-half_height &lt; 0)
-{
-    x = half_height
-}
-else if(x+half_height &gt; room_height)
-{
-    x = room_height - half_height
-}
-if(y-half_width &lt; 0)
-{
-    y = half_width
-}
-else if(y+half_width &gt; room_width)
-{
-    y = room_width - half_width
-}
-
-if(ammo &gt; 0 &amp;&amp; mouse_check_button_pressed(mb_left))
-{
-    instance_create(x, y, Bullet)
-    ammo -= 1
-}
-
-if(bounceTime &gt; 0)
-{
-    bounceTime -= delta_time*0.001
-    move_towards_point(DestX, DestY, 5)
-    if(bounceTime &lt;= 0)
-    {
-        move_towards_point(x, y, 0)
-    }
-    else
-    {
-        move_towards_point(DestX, DestY, 10)
-    }
+    instance_destroy()
 }
 </string>
           </argument>
@@ -136,20 +78,13 @@ if(bounceTime &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>DestX = ((x - other.x)*10)+x
-DestY = ((y - other.y)*10)+y
-bounceTime = 500
-hp -= other.dmg;
-if(hp &lt;= 0)
-{
-    hp = 0
-}
+            <string>instance_destroy()
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="7" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -166,7 +101,7 @@ if(hp &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_circle_colour(x,y,4,c_black,c_red,0);
+            <string>instance_destroy()
 </string>
           </argument>
         </arguments>
