@@ -123,10 +123,10 @@ draw_rectangle_colour(5,3,room_width-5,49,c_black,c_black,c_black,c_black,0);
 
 //HealthBar
 draw_text_colour(10,6,"HP",c_green,c_green,c_green,c_green,255);
-draw_healthbar(35,6,room_width/2-15,18,global.hp,c_gray,c_red,c_green,0,1,1);
+draw_healthbar(35,6,room_width/2-15,18,global.hp,c_gray,c_red,c_green,1,1,1);
 
 //Fuel
-draw_healthbar(room_width/2+15,6,room_width-35,18,global.pow,c_gray,c_dkgray,c_red,1,1,1);
+draw_healthbar(room_width/2+15,6,room_width-35,18,global.pow,c_gray,c_red,c_green,0,1,1);
 draw_text_colour(room_width-30,6,"FL",c_red,c_red,c_red,c_red,255);
 
 //Lives
