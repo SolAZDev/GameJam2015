@@ -19,6 +19,7 @@
     </sprites>
     <sprite>sprites\sBoss</sprite>
     <sprite>sprites\sJeep</sprite>
+    <sprite>sprites\sPlayerBullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
