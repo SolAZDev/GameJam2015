@@ -54,6 +54,13 @@
       <object>objects\oAnt</object>
       <object>objects\oEnemyClass</object>
       <object>objects\oScorpion</object>
+      <objects name="Spawners">
+        <object>objects\Scorpion_Spawner_Left</object>
+        <object>objects\Enemy_Spawner</object>
+        <object>objects\Regular_Spawner</object>
+        <object>objects\Spawner_Base</object>
+        <object>objects\Scorpion_Spawner_Right</object>
+      </objects>
     </objects>
   </objects>
   <timelines name="timelines">
