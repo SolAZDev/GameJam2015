@@ -37,7 +37,7 @@ yMin = 1050
 
 maxCount = 3
 
-obj = Ant
+obj = oAnt
 
 randomize()
 </string>

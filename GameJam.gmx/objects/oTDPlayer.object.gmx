@@ -143,7 +143,7 @@ bounceTime = 500
 hp -= other.dmg;
 if(hp &lt;= 0)
 {
-    hp = 0
+    room_goto(rGameOver);
 }
 </string>
           </argument>

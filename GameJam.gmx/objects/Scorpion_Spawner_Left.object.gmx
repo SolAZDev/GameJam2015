@@ -38,7 +38,7 @@ yMin = 100
 
 maxCount = 1
 
-obj = Scorpion
+obj = oScorpion
 
 randomize()
 </string>
