@@ -12,6 +12,9 @@
     <sprite>sprites\sAmmo</sprite>
     <sprite>sprites\sPower</sprite>
     <sprite>sprites\sGun</sprite>
+    <sprites name="sEnemySprites">
+      <sprite>sprites\sAnt</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -46,7 +49,7 @@
       <object>objects\oTDPlayer</object>
     </objects>
     <objects name="Enemies">
-      <object>objects\oEBug</object>
+      <object>objects\oAnt</object>
       <object>objects\oEnemyClass</object>
     </objects>
   </objects>
