@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_angle = point_direction(x, y, mouse_x, mouse_y)
+
 depth = -100
 </string>
           </argument>
@@ -52,10 +53,6 @@ depth = -100
             <string>x+=lengthdir_x( 10, image_angle);
 y+=lengthdir_y( 10, image_angle);
 
-if(x &lt; -32 || x &gt; 1036 || y &lt; -32 || y &gt; 1036)
-{
-    instance_destroy()
-}
 </string>
           </argument>
         </arguments>
