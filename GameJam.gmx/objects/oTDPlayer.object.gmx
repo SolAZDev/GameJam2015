@@ -48,7 +48,7 @@ half_width = y - bbox_top
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>oTDPlayer</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -98,7 +98,7 @@ else if(y+half_width &gt; room_width)
 
 if(global.ammo &gt; 0 &amp;&amp; mouse_check_button_pressed(mb_left))
 {
-    instance_create(x, y, oPlayerBullet)
+    instance_create(x, y, Bullet)
     global.ammo -= 1
 }
 

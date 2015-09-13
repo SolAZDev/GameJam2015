@@ -10,14 +10,15 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.hp=100;
+  <code>randomize();
+global.hp=100;
 global.pow=50;
 global.ammo=5;
 global.lives=3;
-global.score=5;
-global.StageOpt=2;
+global.score=500;
+global.StageOpt=1;
 instance_create(x,y,oSystem);
-instance_create(room_width/4,room_height/4,oTDPlayer);
+//instance_create(room_width/4,room_height/4,oTDPlayer);
 //LevelOne
 timeline_index = SpawnTimeline;
 timeline_running = true;</code>

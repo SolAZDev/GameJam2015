@@ -40,6 +40,38 @@ if(global.StageOpt == 1){ //Sidescroller
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>305</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_timeline_set</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>14</kind>
+            <timeline>SpawnPowerUp</timeline>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -87,15 +119,15 @@ if(start==1){
             <kind>1</kind>
             <string>/// CREATE THINE HUD
 //HUD Area
-draw_rectangle_colour(5,5,room_width-5,49,c_black,c_black,c_black,c_black,0);
+draw_rectangle_colour(5,3,room_width-5,49,c_black,c_black,c_black,c_black,0);
 
 //HealthBar
 draw_text_colour(10,6,"HP",c_green,c_green,c_green,c_green,255);
 draw_healthbar(35,6,room_width/2-15,18,global.hp,c_gray,c_red,c_green,0,1,1);
 
-//PowerBar -- To Be Removed
+//Fuel
 draw_healthbar(room_width/2+15,6,room_width-35,18,global.pow,c_gray,c_dkgray,c_red,1,1,1);
-draw_text_colour(room_width-30,6,"Pw",c_red,c_red,c_red,c_red,255);
+draw_text_colour(room_width-30,6,"FL",c_red,c_red,c_red,c_red,255);
 
 //Lives
 draw_text_colour(room_width/4-(string_length("Lives")*6),19,"Lives",c_red,c_fuchsia,c_red,c_fuchsia,255);

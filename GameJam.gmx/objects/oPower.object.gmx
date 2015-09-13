@@ -30,6 +30,7 @@ pow=1;
 score=10;
 lives=0;
 ammo=5;
+col=false;
 </string>
           </argument>
         </arguments>

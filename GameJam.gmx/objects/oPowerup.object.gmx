@@ -54,8 +54,7 @@ lives=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_free(x,y+1)){gravity=1;}else{gravity=0; vspeed=0;}
-if(col==true){
+            <string>if(col==true){
     global.ammo += ammo;
     global.hp   += hp;
     global.pow  += pow;
@@ -64,6 +63,7 @@ if(col==true){
     instance_destroy();
 }
 if(global.StageOpt==1){ vspeed=3; }
+if(global.StageOpt==2){if(place_free(x,y+1)){gravity=1;}else{gravity=0; vspeed=0;}}
 </string>
           </argument>
         </arguments>
