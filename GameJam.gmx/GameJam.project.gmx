@@ -14,8 +14,9 @@
     <sprite>sprites\sGun</sprite>
     <sprites name="sEnemySprites">
       <sprite>sprites\sAnt</sprite>
+      <sprite>sprites\sScorpion</sprite>
     </sprites>
-    <sprite>sprites\sScorpion</sprite>
+    <sprite>sprites\sBoss</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
