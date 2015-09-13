@@ -98,7 +98,7 @@ else if(y+half_width &gt; room_width)
 
 if(global.ammo &gt; 0 &amp;&amp; mouse_check_button_pressed(mb_left))
 {
-    instance_create(x, y, Bullet)
+    instance_create(x, y, oPlayerBullet)
     global.ammo -= 1
 }
 
