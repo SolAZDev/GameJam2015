@@ -51,7 +51,7 @@ randomize()
         <arguments>
           <argument>
             <kind>14</kind>
-            <timeline>SpawnTimeline</timeline>
+            <timeline>&lt;undefined&gt;</timeline>
           </argument>
           <argument>
             <kind>0</kind>

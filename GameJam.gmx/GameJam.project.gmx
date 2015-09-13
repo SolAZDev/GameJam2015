@@ -18,6 +18,7 @@
       <sprite>sprites\sScorpion</sprite>
     </sprites>
     <sprite>sprites\sBoss</sprite>
+    <sprite>sprites\sJeep</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -61,8 +62,8 @@
     </objects>
   </objects>
   <timelines name="timelines">
-    <timeline>timelines\SpawnTimeline</timeline>
     <timeline>timelines\SpawnPowerUp</timeline>
+    <timeline>timelines\SpawnTimeline</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\rTitle</room>
