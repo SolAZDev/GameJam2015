@@ -51,6 +51,7 @@
     <objects name="Enemies">
       <object>objects\oAnt</object>
       <object>objects\oEnemyClass</object>
+      <object>objects\oScorpion</object>
     </objects>
   </objects>
   <timelines name="timelines">
