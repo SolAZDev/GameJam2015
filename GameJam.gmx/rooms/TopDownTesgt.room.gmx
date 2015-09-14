@@ -11,17 +11,16 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>randomize();
+global.StageID=1;
 global.hp=100;
 global.pow=50;
-global.ammo=5;
+global.ammo=50;
 global.lives=3;
 global.score=500;
 global.StageOpt=1;
 instance_create(x,y,oSystem);
 //instance_create(room_width/4,room_height/4,oTDPlayer);
-//LevelOne
-timeline_index = SpawnTimeline;
-timeline_running = true;</code>
+//LevelOne</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -42,7 +41,7 @@ timeline_running = true;</code>
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="background0" x="1" y="1" htiled="-1" vtiled="-1" hspeed="0" vspeed="6" stretch="0"/>
+    <background visible="-1" foreground="0" name="Stg1" x="1" y="1" htiled="0" vtiled="-1" hspeed="0" vspeed="6" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

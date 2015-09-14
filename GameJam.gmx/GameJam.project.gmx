@@ -8,6 +8,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sSPStill</sprite>
+    <sprite>sprites\plBul</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sHealth</sprite>
     <sprite>sprites\sAmmo</sprite>
@@ -23,8 +24,12 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\Stg1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\StartStage.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="System">
       <object>objects\oTitle</object>
@@ -32,6 +37,7 @@
       <objects name="Sidescrolling Only">
         <object>objects\oFloor</object>
       </objects>
+      <object>objects\StageManager</object>
     </objects>
     <objects name="PowerUps">
       <object>objects\oPowerup</object>

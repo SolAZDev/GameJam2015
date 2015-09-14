@@ -57,7 +57,7 @@ if(global.pow&lt;90){dmg=10;}
             <kind>1</kind>
             <string>x+=lengthdir_x( 10, image_angle);
 y+=lengthdir_y( 10, image_angle);
-
+effect_create_above(ef_explosion,x,y,.5,c_white);
 </string>
           </argument>
         </arguments>

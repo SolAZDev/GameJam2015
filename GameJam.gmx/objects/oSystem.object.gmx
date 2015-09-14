@@ -36,6 +36,8 @@ if(global.StageOpt == 1){ //Sidescroller
     start=1;
 }
 
+
+
 </string>
           </argument>
         </arguments>
@@ -71,6 +73,94 @@ if(global.StageOpt == 1){ //Sidescroller
             <string>1</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.StageID</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>305</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_timeline_set</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>14</kind>
+            <timeline>SpawnTimeline</timeline>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="3" enumb="0">
@@ -123,10 +213,10 @@ draw_rectangle_colour(5,3,room_width-5,49,c_black,c_black,c_black,c_black,0);
 
 //HealthBar
 //draw_text_colour(10,6,"HP",c_green,c_green,c_green,c_green,255);
-draw_healthbar(35,6,room_width/2,18,global.hp,c_gray,c_red,c_green,1,1,1);
+draw_healthbar(35,6,room_width/2,18,global.hp,c_gray,c_red,c_green,1,1,0);
 
 //Fuel -- HP
-draw_healthbar(room_width/2,6,room_width-35,18,global.hp,c_gray,c_red,c_green,0,1,1);
+draw_healthbar(room_width/2,6,room_width-35,18,global.hp,c_gray,c_red,c_green,0,1,0);
 //draw_text_colour(room_width-30,6,"FL",c_red,c_red,c_red,c_red,255);
 
 //Lives
