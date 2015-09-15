@@ -66,6 +66,9 @@ if(keyboard_check(vk_left) || keyboard_check(ord('A')) ){
     image_xscale=-1;
     hspeed=-4;
 }else{hspeed=0;}
+if(keyboard_check(vk_space) || keyboard_check(ord('X')) || keyboard_check(vk_up)){
+    move_towards_point(x,(self.y-6),4);
+}
 
 /*
 //Jumping
