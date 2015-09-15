@@ -74,8 +74,8 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\rTitle</room>
-    <room>rooms\TopDownTesgt</room>
     <room>rooms\SideScrollTest</room>
+    <room>rooms\TopDownTesgt</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
