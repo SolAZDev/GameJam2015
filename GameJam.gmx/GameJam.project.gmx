@@ -51,9 +51,9 @@
       <object>objects\oBullet</object>
     </objects>
     <objects name="Player">
+      <object>objects\Player</object>
       <object>objects\oPlayerClass</object>
       <object>objects\oSidePlayer</object>
-      <object>objects\oTDPlayer</object>
     </objects>
     <objects name="Enemies">
       <object>objects\oAnt</object>
